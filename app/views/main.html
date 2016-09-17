@@ -1,0 +1,100 @@
+<div class="row marketing">
+  <h5>User credentials</h5>
+
+      <table class="table table-condensed table-responsive table-user-information">
+                <tbody>
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                                Identificacion                                                
+                            </strong>
+                        </td>
+                        <td class="text-primary">
+                            {{userInfo.id}}     
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-user  text-primary"></span>    
+                                Firstname                                                
+                            </strong>
+                        </td>
+                        <td class="text-primary">
+                             {{userInfo.firstName}}      
+                        </td>
+                    </tr>
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-cloud text-primary"></span>  
+                                Lastname                                                
+                            </strong>
+                        </td>
+                        <td class="text-primary">
+                            {{userInfo.lastName}}  
+                        </td>
+                    </tr>
+
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-bookmark text-primary"></span> 
+                                Username                                                
+                            </strong>
+                        </td>
+                        <td class="text-primary">
+                            {{userInfo.username}}  
+                        </td>
+                    </tr>
+
+
+<!--
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-eye-open text-primary"></span> 
+                                Role                                                
+                            </strong>
+                        </td>
+                        <td class="text-primary">
+                            Admin
+                        </td>
+                    </tr>
+-->
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-envelope text-primary"></span> 
+                                Email                                                
+                            </strong>
+                        </td>
+                        <td class="text-primary">
+                            {{userInfo.email}} 
+                        </td>
+                    </tr>
+                </tbody>
+            </table> 
+    
+    <p>
+    <h5>User roles</h5>
+    </p>
+    <table class="table table-condensed table-responsive table-user-information">
+        <tbody>
+            <tr ng-repeat="role in userRoles">        
+                <td>
+                  <strong>
+                  <span class="glyphicon glyphicon-eye-open text-primary"></span>
+                  Role                                                
+                  </strong>
+                </td>
+                    <td class="text-primary">
+                            {{role}}     
+                        </td>
+                </tr>
+                    
+        </tbody>
+    </table>
+    
+</div>
